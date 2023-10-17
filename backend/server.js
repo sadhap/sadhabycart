@@ -12,7 +12,7 @@ process.on('unhandledRejection',(err)=>{
     console.log(`Error:${err.message}`);
     console.log('shutting down the server due to unhandled rejection error');
     server.close(()=>{
-        Process.exit(1)
+        process.exit(1)
     })
 })
 
